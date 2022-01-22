@@ -1,0 +1,296 @@
+@font-face {
+    font-family: mukta;
+    src: url('../fonts/Mukta-Bold.ttf');
+}
+
+
+.card{
+    display:inline-block;
+    margin-left:20px;
+}
+.productCard{
+    width:300px;
+    height:300px;
+    text-align:center;
+    /*
+    
+    border-width: - ვანიჭებთ border-ის სიგანეს(ზომას)
+    border-style: - ვანიჭებთ border-ის ვიზუალს(სტილს).
+    border-color: - ვანიჭებთ border-ის ფერს;
+
+
+    border:სიგანე სტილი ფერი; -- მოკლე ჩანაწერი border-ის.
+
+    
+    border-top: ზედა ბორდერი
+    border-bottom: ქვედა ბორდერი
+    border-left: მარცხენა ბორდერი
+    border-right: მარჯვენა ბორდერი
+
+
+
+    border-style: solid, dashed, dotted, groove, ridge, inset, outset.. 
+  
+  
+    box-shadow:3px 3px 3px 10px black;
+  
+  
+
+
+    border-radius: ყველა კუთხეს ამრგვალებს
+
+    border-top-left-radius: ზედა მარცხენა კუთხის რადიუსი;
+    border-top-right-radius: ზედა მარჯვენა კუთხის რადიუსი;
+    
+    border-bottom-right-radius: ქვედა მარჯვენა კუთხის რადიუსი;
+    border-bottom-left-radius: ქვედა მარცხენა კუთხის რადიუსი;
+
+    */
+
+
+  /* box-shadow:3px 3px 50px 10px red; */
+
+
+    border:2px solid black;
+
+    display:inline-block;
+
+}
+
+
+
+/* h1{
+    border:2px solid black;
+    width:200px;
+    height:200px;
+    display:inline-block;
+}
+
+
+p{
+    border:2px solid red;
+    width:100px;
+    height:100px;
+}
+
+
+span{
+    border:2px solid green;
+    display:block;
+    width:100px;
+    height:100px;
+} */
+
+
+
+/* body{
+    background-color:black;
+} */
+
+
+.MarginParent{
+    width:fit-content;
+    height:600px;
+    width:400px;
+    background-color:green;
+    display:block;
+    margin:auto;
+
+}
+
+.Margin{
+    width:200px;
+    height:200px;
+    background-color: red;
+    color:#fff;
+    text-align:center;
+    display:inline-block;
+
+    margin:auto;
+    /* margin:100px; */
+    margin-top:100px;    
+}
+
+
+.center{
+    margin-top:80px;
+}
+
+
+.register{
+    width:100px;
+    height:30px;
+    background-color:blue;
+    color:white;
+    text-align: center;
+    font-weight:bold;
+    
+    padding-top:10px;
+
+
+    margin-top:550px;
+    margin-left:280px;
+    border-radius:20px;
+
+    display:inline-block;
+
+}
+
+
+
+/* 
+margin- ქმნის სივრცეს ელემენტის გარშემო
+
+margin-left - მარცხენა დაშორება
+margin-right  -მარჯვენა დაშორება
+margin-bottom - ქვედა დაშორება
+margin-top - ზედა დაშორება
+
+
+margin:100px; - ყველა მხარეს შექმნის 100px-იან დაშორებას.
+
+
+            top-bottom       left-right
+    margin:   50px             100px;
+
+             top     right   bottom  left
+    margin:  20px     40px    60px    80px;
+
+
+    ჰორიზონტალურად გასაცენტრებლად შეგვიძლია გამოვიყენოთ margin:auto;
+
+*/
+
+
+
+
+
+/* 
+padding- ქმნის სივრცეს ელემენტის გარშემო
+
+padding-left - მარცხენა დაშორება
+padding-right  -მარჯვენა დაშორება
+padding-bottom - ქვედა დაშორება
+padding-top - ზედა დაშორება
+
+
+padding:100px; - ყველა მხარეს შექმნის 100px-იან დაშორებას.
+
+
+            top-bottom       left-right
+    padding:   50px             100px;
+
+              top     right   bottom  left
+    padding:  20px     40px    60px    80px;
+
+
+*/
+
+
+
+.Padding{
+    width:200px;
+    height:200px;
+    background-color: red;
+    color:#fff;
+    text-align:center;
+}
+
+
+.Padding p{
+    padding:100px;
+}
+
+
+
+.padding{
+    font-size:30px;
+    color:#fff;
+    background-color:red;
+    width:fit-content;
+    padding:200px;
+}
+
+
+
+
+.box
+{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    color:black;
+    padding:100px;
+}
+
+
+
+#register{
+    background-color:blue;
+    color:#fff;
+    width:fit-content;
+    padding:10px 50px;
+    border-radius:30px;
+}
+
+
+
+input{
+    padding:15px 25px;
+    border-radius:20px;
+    background-color:blue;
+    border:none;
+    color:#fff;
+    font-size:25px;
+}
+
+
+
+
+.card{
+    width:300px;
+    box-shadow:3px 3px 6px grey;
+}
+.card-img{
+    width:100%;
+    height:240px;
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit: fill;
+}
+
+.card-headers{
+    text-align: center;
+}
+
+.graphictext
+{
+    color:tomato;
+}
+.card-headers h4{
+    margin:0;
+    font-family:mukta;
+}
+
+
+.card-body{
+    padding:10px;
+}
+
+
+.card-headers p{
+    font-family:mukta;
+}
+
+
+#readmoreBtn{
+    background-color:tomato;
+    display:inline-block;
+    color:#fff;
+    padding:7px 10px;
+    border-radius:6px;
+    margin:0;
+}

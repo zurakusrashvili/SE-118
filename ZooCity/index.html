@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo City - ზოო მაღაზია</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light  subNav position-absolute w-100">
+        <div class="container">
+          <ul class="lang navbar-nav ">
+            <li class="nav-item"><a class="nav-link text-white" href="">GEO /</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="">ENG /</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="">RUS</a></li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">მთავარი</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">ჩვენს შესახებ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">ეს საინტერესოა</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-white">კონტაქტი</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-white animalsNav position-absolute w-100">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img class="logo" src="img/logo.png" alt="Logo not found">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="img/dog.png" alt="">
+                    ძაღლი
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">საკვები</a></li>
+                      <li><a class="dropdown-item" href="#">სასუსნავები & ძვლები</a></li>
+                      <li><a class="dropdown-item" href="#">აქსესუარები</a></li>
+                      <li><a class="dropdown-item" href="#">პრეპარატები</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/cat.png" alt="">
+                     
+                        კატა
+                    </a>
+                    <ul class="dropdown-menu catmenu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">საკვები</a></li>
+                      <li><a class="dropdown-item" href="#">სასუსნავები & ძვლები</a></li>
+                      <li><a class="dropdown-item" href="#">აქსესუარები</a></li>
+                      <li><a class="dropdown-item" href="#">პრეპარატები</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/fis.png" alt="">
+                    
+                        თევზი
+                    </a>
+                    <ul class="dropdown-menu fishmenu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">საკვები</a></li>
+                      <li><a class="dropdown-item" href="#">სასუსნავები & ძვლები</a></li>
+                      <li><a class="dropdown-item" href="#">აქსესუარები</a></li>
+                      <li><a class="dropdown-item" href="#">პრეპარატები</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/bird.png" alt="">
+                     
+                        ფრინველი
+                    </a>
+                    <ul class="dropdown-menu birdmenu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">საკვები</a></li>
+                      <li><a class="dropdown-item" href="#">სასუსნავები & ძვლები</a></li>
+                      <li><a class="dropdown-item" href="#">აქსესუარები</a></li>
+                      <li><a class="dropdown-item" href="#">პრეპარატები</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/rabbit.png" alt="">
+                      
+                        სხვა ცხოველი
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">საკვები</a></li>
+                      <li><a class="dropdown-item" href="#">სასუსნავები & ძვლები</a></li>
+                      <li><a class="dropdown-item" href="#">აქსესუარები</a></li>
+                      <li><a class="dropdown-item" href="#">პრეპარატები</a></li>
+                    </ul>
+                  </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+      <header>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active"  style="background-image: url('img/carousel-bg.png');">
+                
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>ჩვენთან შეგიძლიათ შეიძინოთ უმაღლესი ხარისხის საკვები</h5>
+                  <p>ჩვენთან შეგიძლიათ შეიძინოთ უმაღლესი ხარისხის საკვებიჩვენთან შეგიძლიათ 
+                    უმაღლესი ხარისხის საკვები
+                    ჩვენთან შეგიძლიათ შეიძინოთ უმაღლესი ხარისხის საკვებიჩვენთან 
+                    შეგიძლიათ შეიძინოთ უმაღლესი ხარისხის საკვებიჩვენთან შეგიძლიათ </p>
+
+                    <button class="captionBtn">სრულად ნახვა</button>
+                </div>
+              </div>
+              <!-- <div class="carousel-item " style="background-image: url('img/carousel-bg.png');">
+                
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item " style="background-image: url('img/carousel-bg.png');">
+                
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+             <img src="img/carousel-left.png" alt="">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+             <img src="img/carousel-right.png" alt="">
+            </button>
+          </div>
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

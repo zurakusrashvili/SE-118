@@ -1,0 +1,525 @@
+@font-face {
+    font-family: alk-sanet;
+    src: url(../fonts/alk-sanet.ttf);
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+/* input[type="text"]{
+    border:none;
+    border-bottom:2px solid grey;
+    height:25px;
+    transition: .9s;
+}
+.textBox{
+    position:relative;
+    top:100px;
+}
+
+.textBox span{
+    position:absolute;
+    left:0px;
+    font-weight:bold;
+    color:grey;
+    top:5px;
+    transition: .5s;
+}
+
+.textBox input:focus{
+    outline:none;
+    border-bottom-color:darkblue;
+}
+
+.textBox input:focus + span{
+    top:-25px;
+
+}
+
+
+
+.aLink{
+    width:500px;
+    height:300px;
+    background-color:rgb(49, 49, 49);
+    margin-top:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aLink a{
+ color:#fff;
+ text-decoration: none;
+ border-bottom:2px solid #fff;
+ padding:7px 0px;
+ transition: .6s;
+}
+
+.aLink a:hover{
+    color:black;
+    padding:7px 5px;
+    background-color:#fff;
+} */
+*{
+    box-sizing:border-box;
+}
+
+.container{
+    width:1140px;
+    margin:auto;
+    max-width:100%;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+}
+
+nav{
+    height:70px;
+    background-color:darkslategray;
+    width:100%;
+    display:flex;
+    transition: ease-out .6s;
+
+
+    /* animation-name:changeBackground;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate; */
+
+}
+
+nav .container{
+  
+    transition: ease-out .6s;
+    align-self:center;
+}
+.navbar{
+    margin-block-start: 0;
+    margin-block-end:0;
+    display:flex;
+    align-items: center;
+    padding-inline-start: 0px;
+    transition: left .6s linear;
+    position:relative;
+    left:0;
+   z-index:99;
+}
+
+
+.products .row{
+    gap:20px;
+}
+
+.col-3{
+    width:23%;
+}
+
+.card{
+    width:500px;
+    /* border:2px solid black; */
+    background-color: #fff;
+    height:100%;
+    padding:20px;
+    box-shadow:3px 3px 3px grey;
+    position:relative;
+    overflow:hidden;
+    transition:.9s;
+}
+
+
+.card:hover{
+    overflow:visible;
+}
+.card:hover img{
+ transform:none;  
+}
+
+
+/* .card:after{
+    content:"ფასდაკლება";
+    position:absolute;
+    height:30px;
+    width:100%;
+    background-color:tomato;
+    color:#fff;
+    text-align: center;
+    font-family:alk-sanet;
+    text-align: center;
+    font-family: alk-sanet;
+    transform: rotate(-40deg);
+    vertical-align: middle;
+    bottom: 25px;
+    left: 90px;
+    transition:.7s;
+
+} */
+
+.card img{
+    width:100%;
+    display:block;
+    margin:auto;
+    height:100px;
+    object-fit:scale-down;
+    transition:.9s;
+    transform:scale(1.3);
+    z-index:99;
+}
+/* .card::after:hover{
+    background-color:green;
+} */
+
+.card-body{
+    margin-top:60px;
+    text-align: center;
+}
+.card-body h1{
+    margin:0;
+    background-color:lightgreen;
+    height:60px;
+    width:100%;
+}
+.navbar-li{
+    list-style:none;
+    display:inline-block;
+}
+
+.nav-link{
+    color:#fff;
+    text-decoration: none;
+    font-family:alk-sanet;
+    display:inline-block;
+    padding:20px 15px;
+    transition:.9s;
+    animation-name:logoAnimation;
+    animation-duration:.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* animation-delay:2s; */
+    animation-play-state:paused;
+}
+
+.nav-link:hover{
+    font-size:26px;
+    animation-play-state: running;
+}
+
+.products{
+    margin-top:100px;
+}
+
+.nav-link:hover{
+background-color:rgb(56, 126, 126);
+}
+
+.logo svg{
+    width:50px;
+    height:50px;
+    color:#fff;
+    cursor:pointer;
+    /* animation-name:logoAnimation; */
+    animation-duration:.2s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes logoAnimation{
+    0%{
+        color:yellow;
+        transform:translateX(-100%);
+    }
+   
+    100%{
+        color:red;
+        transform:translateX(100%);
+
+    }
+}
+
+
+
+.burgerSpan{
+    display:none;
+    /* transition:ease-out .6s; */
+    cursor:pointer;
+
+}
+.burgerSpan + input{
+display:none;
+}
+.burgerSpan svg{
+    color:#fff;
+    width:40px;
+    height:40px;
+    transition: .6s;
+
+}
+
+.bi-stopwatch{
+    /* transform:translateY(-30px); */
+    animation-name:animateWatch;
+    animation-duration:.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.card{
+    position:relative;
+}
+.bi{
+    color:tomato;
+    font-size:30px;
+    /* position:relative;
+    top:-40px; */
+    display:block;
+ 
+    /* position:absolute; */
+    /* transform: translateY(200px); */
+    /* left:10px; */
+    /* transform:scale(1); */
+    /* bottom:40px; */
+}
+.box{
+    width:300px;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #000000;
+    overflow:hidden;
+    position:relative;
+}
+
+
+.box i{
+    position:absolute;
+    
+}
+/*
+media - 1. screen 2.print
+
+
+max-width
+min-width
+
+
+*/
+@keyframes animateWatch {
+    0%{transform:scale(0.8)}
+    100%{transform:scale(1.2)}
+}
+
+
+
+
+
+
+.card{
+    width:500px;
+    height:500px;
+    border-bottom:2px solid black;
+}
+
+
+.scrollFlex{
+    width:100%;
+    height:500px;
+    background:red;
+    display:flex;
+    overflow:scroll;
+    /* flex-direction: column; */
+    margin-top:200px;
+}
+
+
+
+
+
+
+
+
+
+/* .card-image{
+    background:lightgreen;
+    width:400px;
+
+}
+
+
+.card-image img{
+    width:100%;
+    padding:50px;
+    /* height:250px; */
+    /* object-fit:contain;
+    object-position:50% 50%;
+} */
+
+ 
+
+
+
+
+@media (max-width:1140px){
+    .col-3{
+        width:31%;
+    }
+}
+
+@media (max-width:900px){
+    .col-3{
+        width:48%;
+    }
+}
+@media (max-width:600px){
+    .col-3{
+        width:80%;
+        margin:auto;
+    }
+}
+@media (max-width:772px){
+    .burgerSpan{
+        display:block;
+    }
+
+    nav .row{
+        position:relative;
+    }
+    .navbar{
+        position:absolute;
+        width:100%;
+        height:fit-content;
+        background-color:rgb(80, 80, 80);
+        flex-direction: column;
+        top:60px;
+        display:none;
+        transition: left .6s linear;
+
+    }
+
+    
+
+    .nav-link{
+        width: 200px;
+        text-align: center;
+        display:block;
+        margin:auto;
+    transition:ease-out .6s;
+
+
+    }
+
+    .navbar-li{
+        display:block;
+    }
+
+    #burgermenu:checked + .navbar{
+        display:block;
+        transition: left .6s linear;
+
+
+    }
+}
+
+/* 
+@media (max-width:600px){
+    .nav-link{
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width:550px){
+    .nav-link{
+        padding:3px;
+    }
+}
+
+
+@media (max-width:500px){
+    .logo{
+        display:none;
+    }
+
+
+    nav .row{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:430px){
+    nav{
+        height: fit-content;
+    }
+
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .nav-link{
+        display:block;
+        padding:10px 20px;
+
+    }
+
+
+    .navbar-li{
+        display:block;
+    }
+} */
+
+/* 
+
+
+.card-image{
+    background-color:lightgreen;
+    width:400px;
+    height:500px;
+}
+
+.card-image img{
+    width:100%;
+    padding:30px;
+    height:200px;
+    object-fit:contain;
+} */
+
+
+
+.overflow{
+    width: 400px;
+    height:400px;
+    background-color: red;
+    font-size:40px;
+    overflow:hidden;
+    
+}
+
+
+/*
+@keyframes ანიმაციისსახელი{
+
+    from{}
+    to{}
+
+
+}
+
+*/
+
+@keyframes changeBackground{
+    from{background-color: lightgreen;}
+    to{background-color:red}
+}

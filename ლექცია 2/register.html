@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form method="GET">
+
+        <h1>რეგისტრაცია</h1>
+        
+            label - გამოიყენება input-ტიპებისთვის, ვწერთ თუ რისთვის არის განკუთვნილი input-ველი.(მაგ:სახელი,გვარი,იმეილი...)
+            
+            <input> გამოიყენება საიტზე სხვადასხვა ფორმის ასაწყობად (მაგ: სარეგისტრაციო ფორმა) და გააჩნია ატრიბუტები
+                    -- type="განსაზრავს როგორი ტიპის input გვინდა რომ დავამატოთ"
+                    -- name="input-ს არქმევს სახელს რათა შემდგომ გაგვიმარტივდეს ამ input-ის ვიზუალის შეცვლა"
+                    -- placeholder="input-ის ველში შემოაქვს მკრთალი ტექსტი, რომელიც input-ში ინფორმაციის ჩაწერისას გაქრება"
+            
+        
+        
+        <label for="firstName"> სახელი </label> <br>
+        <input type="text" name="firstName" placeholder="სახელი">  <br>
+
+        <label for="lastName"> გვარი </label> <br>
+        <input type="text" name="lastName"> <br>
+
+        <label for="email">შემოიყვანეთ იმეილი</label> <br>
+        <input type="email" name="email" placeholder="name@gmail.com"> <br>
+
+        <label for="password">პაროლი</label> <br>
+        <input type="password" name="password"> <br> <br>
+
+        
+        <select name="countries">
+            Option გამოიყენება თითოეული ასარჩევი ველის დასამატებლად, 
+                disabled-უფლებას არ მოგვცემს რომ მოვნიშნოთ კონკრეტული option-ი.
+                selected-საიტის ჩატვირთვისას მონიშნავს შესაბამის ველს,რომელსაც ექნება გაწერილი ეს ატრიბუტი
+            
+            <option disabled selected>აირჩიეთ დაბადების ადგილი</option>
+            <option>საქართველო</option>
+            <option>ამერიკა</option>
+            <option>უკრაინა</option>
+            <option>გერმანია</option>
+            <option>რუსეთი</option>        
+
+        </select> <br> <br>
+
+        <label for="Male">
+            <input type="radio" name="სქესი">Male
+        </label>
+
+        <label for="Female">
+            <input type="radio" name="სქესი">Female
+        </label>
+        <br> <br>
+
+        <label for="Male">
+            <input type="radio" name="yes/no">კი
+        </label>
+
+        <label for="Female">
+            <input type="radio" name="yes/no">არა
+        </label>
+        <br> <br>
+
+        <label for="birthdate">აირჩიეთ დაბადების თარიღი: </label> <br>
+        <input type="date" name="birthdate" >  <br> <br>
+
+
+        <label for="profileImage">ატვირთეთ პროფილის ფოტო</label> <br>
+        <input type="file" name="profileImage" > <br> <br>
+
+
+        <input type="radio" name="სქესი" id="">
+
+        <input type="range" name="" id=""><br>
+
+        <input type="search" name="" id=""> <br>
+
+        <label for="">
+            <input type="checkbox" name="" id="">ვეთანხმები წესებს!
+        </label> <br>
+
+        <input type="url" name="" placeholder="http://"> <br>
+        <input type="number" name="" id="">
+      
+        
+
+        <input type="submit" value="რეგისტრაცია">
+        
+
+
+
+
+
+    </form> 
+-->
+
+
+
+<form method="POST">
+    <label for="email">შეიყვანეთ იმეილი*</label> <br>
+    <input type="email" name="email" required>  <br>
+
+    <label for="password">შეიყვანეთ პაროლი*</label> <br>
+    <input type="password" name="password" required > <br>
+
+    <input type="submit" value="შესვლა">
+
+
+</form>
+
+
+
+
+<table  border="1">
+
+    <tr>
+        <td>სახელი</td>
+        <td>გვარი</td>
+    </tr>
+
+    <tr>
+        <td>ზურა</td>
+        <td>კუსრაშვილი</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,332 @@
+@font-face {
+    font-family: alk-sanet;
+    src: url(../fonts/alk-sanet.ttf);
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+/* input[type="text"]{
+    border:none;
+    border-bottom:2px solid grey;
+    height:25px;
+    transition: .9s;
+}
+.textBox{
+    position:relative;
+    top:100px;
+}
+
+.textBox span{
+    position:absolute;
+    left:0px;
+    font-weight:bold;
+    color:grey;
+    top:5px;
+    transition: .5s;
+}
+
+.textBox input:focus{
+    outline:none;
+    border-bottom-color:darkblue;
+}
+
+.textBox input:focus + span{
+    top:-25px;
+
+}
+
+
+
+.aLink{
+    width:500px;
+    height:300px;
+    background-color:rgb(49, 49, 49);
+    margin-top:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aLink a{
+ color:#fff;
+ text-decoration: none;
+ border-bottom:2px solid #fff;
+ padding:7px 0px;
+ transition: .6s;
+}
+
+.aLink a:hover{
+    color:black;
+    padding:7px 5px;
+    background-color:#fff;
+} */
+*{
+    box-sizing:border-box;
+}
+
+.container{
+    width:1140px;
+    margin:auto;
+    max-width:100%;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+}
+
+nav{
+    height:70px;
+    background-color:darkslategray;
+    width:100%;
+    display:flex;
+    transition: ease-out .6s;
+}
+
+nav .container{
+  
+    transition: ease-out .6s;
+    align-self:center;
+}
+.navbar{
+    margin-block-start: 0;
+    margin-block-end:0;
+    display:flex;
+    align-items: center;
+    padding-inline-start: 0px;
+    transition: left .6s linear;
+    position:relative;
+    left:0;
+   
+}
+
+
+.products .row{
+    gap:20px;
+}
+
+.col-3{
+    width:23%;
+}
+
+.card{
+    width:100%;
+    /* border:2px solid black; */
+    background-color: #fff;
+    height:300px;
+    padding:20px;
+    box-shadow:3px 3px 3px grey;
+    position:relative;
+    overflow:hidden;
+    
+}
+
+
+.card:after{
+    content:"ფასდაკლება";
+    position:absolute;
+    height:30px;
+    width:100%;
+    background-color:tomato;
+    color:#fff;
+    text-align: center;
+    font-family:alk-sanet;
+    text-align: center;
+    font-family: alk-sanet;
+    transform: rotate(-40deg);
+    vertical-align: middle;
+    bottom: 25px;
+    left: 90px;
+
+}
+
+.card img{
+    width:100%;
+    display:block;
+    margin:auto;
+    height:70%;
+    object-fit:contain;
+}
+
+.card-body{
+    text-align: center;
+}
+.navbar-li{
+    list-style:none;
+    display:inline-block;
+}
+
+.nav-link{
+    color:#fff;
+    text-decoration: none;
+    font-family:alk-sanet;
+    display:inline-block;
+    padding:20px 15px;
+}
+
+.products{
+    margin-top:100px;
+}
+
+.nav-link:hover{
+background-color:rgb(56, 126, 126);
+}
+
+.logo svg{
+    width:50px;
+    height:50px;
+    color:#fff;
+    cursor:pointer;
+}
+
+
+
+.burgerSpan{
+    display:none;
+    /* transition:ease-out .6s; */
+    cursor:pointer;
+
+}
+.burgerSpan + input{
+display:none;
+}
+.burgerSpan svg{
+    color:#fff;
+    width:40px;
+    height:40px;
+    transition: .6s;
+
+}
+
+
+
+/*
+media - 1. screen 2.print
+
+
+max-width
+min-width
+
+
+*/
+
+
+
+
+@media (max-width:1140px){
+    .col-3{
+        width:31%;
+    }
+}
+
+@media (max-width:900px){
+    .col-3{
+        width:48%;
+    }
+}
+@media (max-width:600px){
+    .col-3{
+        width:80%;
+        margin:auto;
+    }
+}
+@media (max-width:772px){
+    .burgerSpan{
+        display:block;
+    }
+
+    nav .row{
+        position:relative;
+    }
+    .navbar{
+        position:absolute;
+        width:100%;
+        height:fit-content;
+        background-color:rgb(80, 80, 80);
+        flex-direction: column;
+        top:60px;
+        display:none;
+        transition: left .6s linear;
+
+    }
+
+    
+
+    .nav-link{
+        width: 200px;
+        text-align: center;
+        display:block;
+        margin:auto;
+    transition:ease-out .6s;
+
+
+    }
+
+    .navbar-li{
+        display:block;
+    }
+
+    #burgermenu:checked + .navbar{
+        display:block;
+        transition: left .6s linear;
+
+
+    }
+}
+
+/* 
+@media (max-width:600px){
+    .nav-link{
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width:550px){
+    .nav-link{
+        padding:3px;
+    }
+}
+
+
+@media (max-width:500px){
+    .logo{
+        display:none;
+    }
+
+
+    nav .row{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:430px){
+    nav{
+        height: fit-content;
+    }
+
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .nav-link{
+        display:block;
+        padding:10px 20px;
+
+    }
+
+
+    .navbar-li{
+        display:block;
+    }
+} */

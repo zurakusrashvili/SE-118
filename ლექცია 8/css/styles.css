@@ -1,0 +1,200 @@
+
+
+.a-link:link{
+    text-decoration: none;
+    color:red;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+
+
+.a-link:visited{
+    color:green;
+    text-decoration: none;
+}
+
+input[type="text"]{
+    display:block;
+    width:250px;
+    height:30px;
+    border-radius:20px;
+    /* border:none;
+    background-color:grey; */
+    margin-top:100px;
+    transition: .9s;
+}
+
+
+input[type="text"]:focus{
+    width:300px;
+    height:50px;
+    background-color:rgb(0, 255, 13);
+    color:#fff;
+    font-size:20px;
+}
+
+
+.lastname:hover{
+    width:300px;
+    height:50px;
+    background-color:red;
+    color:#fff;
+    font-size:20px;
+}
+
+
+
+.box{
+    width:200px;
+    height:200px;
+    background-color:red;
+
+}
+
+
+
+
+.box:hover{
+    background-color:yellow;
+}
+.box:active{
+    background-color:green;
+}
+#pText{
+    background-color: green;
+}
+
+
+.pText{
+   background-color:red;
+}
+
+
+
+.pText::first-line{
+    font-family:monospace;
+    font-size:18px;
+    background-color:red;
+}
+
+.pText::first-letter{
+    font-size:60px;
+    color:green;
+}
+
+.pText::selection{
+    background-color:green !important;
+    color:yellow;
+}
+
+.registerBtn{
+    padding:10px 20px;
+    background-color:green;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    border:none;
+    position:relative;
+}
+
+
+.registerBtn::before{
+    content: "";
+    color:red;
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:5px;
+    background-color:red;
+}
+
+
+
+.registerBtn::after{
+    content: "";
+    color:red;
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:5px;
+    background-color:rgba(0, 26, 255, 0.589);
+}
+
+
+.registerBtn{
+    border-top:5px solid yellow;
+    display:block;
+}
+
+
+.registerBtn:active{
+    background-color:yellow;
+    color:black;
+}
+
+
+
+.pTest{
+    display:inline-block;
+    background-color:grey;
+    color:#fff;
+    padding:10px;
+    border-right:5px solid red;
+}
+
+/* .pTest:last-child{
+    border:none;
+}
+
+.pTest:first-child{
+    border:none;
+}
+
+.pTest:nth-child(3){
+    border:none;
+} */
+
+input[type="checkbox"]{
+    display:none;
+    
+}
+label{
+   cursor:pointer;
+
+}
+label .checkSpan{
+   display:inline-block;
+   width:180px;
+   height:80px;
+   border:4px solid tomato;
+   border-radius:60px;
+   position:relative;
+   
+}
+
+
+label .checkSpan:before{
+    content:"";
+    width:70px;
+    height:70px;
+    position:absolute;
+    background-color:tomato;
+    border-radius:50%;
+    top:5px;
+    left:3px;
+    transition:.9s;
+}
+label :checked ~ .checkSpan{
+    border-color:green;
+}
+
+label :checked ~ .checkSpan:before{
+    background-color:green;
+    left:107px;
+}
+
+
+
+

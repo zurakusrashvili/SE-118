@@ -1,0 +1,190 @@
+@font-face {
+    font-family: alk-sanet;
+    src: url(../fonts/alk-sanet.ttf);
+}
+
+@font-face {
+    font-family: mukta;
+    src: url(../fonts/Mukta-Bold.ttf);
+}
+
+*{
+    box-sizing:border-box;
+}
+
+h2,h4{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.card{
+    box-shadow: 0px 1px 3px 4px #80808082;
+    height:500px;
+    width:300px;
+display:block;
+margin:auto;
+}
+
+.card-img{
+    width:100%;
+}
+
+.card-body{
+    font-family:Arial, Helvetica, sans-serif;
+    padding:30px 20px;
+    background-color:#fff;
+    position: relative;
+    top:-100px;
+}
+
+
+.price{
+    color:rgb(27, 187, 27) !important;
+    float:right;
+    font-size:24px !important;
+}
+
+
+.card-body span{
+    color:grey;
+    font-size:14px;
+}
+
+
+.Sizes{
+    margin-top:20px;
+}
+
+.colors{
+    margin-top:15px;
+}
+
+.color{
+    width:15px;
+    height:15px;
+    border-radius:15px;
+    display:inline-block;
+    margin-top:5px;
+}
+
+.img{
+    position:relative;
+}
+
+.img-overlay{
+    background-color:rgba(50, 163, 125, 0.411);
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+
+.detailsBtn{
+    z-index:999;
+    position:absolute;
+    top:37%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    border:2px solid #fff;
+    padding:10px 15px;
+
+}
+
+
+
+
+.Box{
+    width:600px;
+    height:600px;
+    background-color: rgb(255, 0, 0);
+
+}
+
+.innerbox{
+    width:100px;
+    height:100px;
+    background-color: green;
+    opacity:1;
+}
+
+
+
+.divForm{
+    width:400px;
+    height:400px;
+    background: linear-gradient(90deg, rgba(212,220,8,1) 1%, rgba(220,8,8,1) 37%, rgba(21,231,45,1) 84%);
+    padding-top:150px;
+    padding-left:50px;
+}
+
+
+.inputText{
+    width:300px;
+    height:35px;
+    border-radius:5px;
+    border:none;
+}
+
+
+.inputText + span{
+    font-family:alk-sanet;
+    position:relative;
+    top:-25px;
+    left:15px;
+    opacity:0.6;
+    transition:.9s;
+    font-size:15px;
+}
+
+
+
+form input[name="lastname"]{
+    margin-top:50px;
+}
+
+
+
+.inputText{
+    outline:none;
+}
+
+.inputText:focus + span{
+    top:-63px;
+    left:0px;
+    opacity:1;
+    color:yellow;
+    font-size:30px;
+}
+
+
+
+/* 
+block ელემენტის ჰორიზონტალური გაცენტრება{
+  display:block;
+  margin:auto;
+}
+
+
+--absolute ელემენტის გაცენტრება--
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);  
+
+}
+
+
+--სტატიკური ელემენტის გაცენტრება (display:flex)--
+{
+display:flex;
+justify-content: center;
+align-items:center; 
+}
+
+
+*/

@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: mukta;
+    src: url('../fonts/alk-sanet.ttf');
+}
+
+.masthead-heading{
+
+    font-family:-webkit-pictograph;
+}
+
+
+@keyframes animatelogo{
+    from{
+        font-size:10px;
+    }
+
+    to{
+font-size:30px;
+    }
+}

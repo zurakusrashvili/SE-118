@@ -1,0 +1,200 @@
+@font-face {
+    font-family: mukta;
+    src: url('../fonts/Mukta-Bold.ttf');
+}
+@font-face {
+    font-family: alk-sanet;
+    src: url('../fonts/alk-sanet.ttf');
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+
+.container{
+
+    width:1240px;
+    margin:auto;
+    max-width:100%;
+}
+nav{
+    width:100%;
+    height:60px;
+    background-color: darkblue;
+    display:flex;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left:auto;
+
+}
+
+
+
+
+.navbar-link{
+    text-decoration: none;
+    color:#fff;
+    font-family:alk-sanet;
+    padding: 23px 15px;
+    display:inline-block;
+
+}
+.navbar-li{
+    list-style:none;
+    display: inline-block;
+    
+}
+
+.card{
+    width:400px;
+    box-shadow:3px 3px 6px grey;
+    /* margin-top:100px; */
+}
+.card-img{
+    width:100%;
+    height:240px;
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit: fill;
+padding:40px;
+}
+
+.card-headers{
+    text-align: center;
+}
+
+.graphictext
+{
+    color:tomato;
+}
+.card-headers h4{
+    margin:0;
+    font-family:mukta;
+}
+
+.card-body{
+    padding:10px;
+}
+
+
+.card-headers p{
+    font-family:mukta;
+}
+
+
+#readmoreBtn{
+    background-color:tomato;
+    display:inline-block;
+    color:#fff;
+    padding:7px 10px;
+    border-radius:6px;
+    margin:0;
+}
+
+.cards
+{
+    /* background-color: darkblue; */
+    height:fit-content;
+    display:flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    margin-top:100px;
+    /* width:1100px; */
+    /* margin:auto; */
+    /* column-gap:100px; */
+    /* row-gap:100px; */
+}
+
+label, input{
+    display:block;
+}
+
+
+label{
+    font-family:alk-sanet;
+}
+
+#firstname {
+    width:210px;
+    height:30px;
+    background-color: green;
+    border-radius:20px;
+    margin-top:20px;
+    background-image:url('https://key0.cc/images/small/20_19bb9c564cbcaa223adaf2f81865112e.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+
+
+}
+header{
+    width:100%;
+    height:400px;
+    background-color:skyblue;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+header h1{
+    margin-block-start: 0;
+    margin-block-end:0;
+}
+
+.test{
+    width:1140px;
+    margin:auto;
+    height:60px;
+    background-color: darkblue;
+
+    
+
+    /* max-width:100%; - როცა ეკრანის სიგანე ჩამოცდება უკვე წინასწარ გაწერილ ფიქსირებულ ზომას, მაშინ ეს ელემენტი
+                         რომელზეც გავწერთ max-width დაიკავებს ეკრანის სიგანის 100%-ს.
+       min-width:500px; - როცა ეკრანის ზომა იქნება 500-პიქსელზე ნაკლები, ელემენტის ზომა აღარ დაპატარვდება 
+                          500px-ზე ქვემოთ.
+    */
+
+}
+
+
+
+/*
+justify-content: - მოქმედებს ჰორიზონტალურ
+align-items: - მოქმედებს ვერტიკალურ ხაზზე
+
+
+*/
+
+
+
+
+/* 
+#secondDiv{
+    align-self: center;
+}
+
+
+#thirdDiv{
+    align-self:flex-end;
+} */
+
+
+.box{
+    /* margin-left:5px; */
+    width:100px;
+    height:100px;
+    background-color:red;
+}

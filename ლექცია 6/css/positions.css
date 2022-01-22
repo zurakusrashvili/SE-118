@@ -1,0 +1,123 @@
+@font-face {
+    font-family: mukta;
+    src: url(../fonts/Mukta-Bold.ttf);
+}
+
+*{
+    box-sizing:border-box;
+}
+
+ body{
+    margin:0;
+    /* background-color:red; */
+    /* height:100vh; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+span{
+    font-family: mukta;
+}
+.card{
+    width:300px;
+    height:fit-content;
+    box-shadow: 6px 10px 22px grey;
+    padding:20px;
+    background-color: #fff;
+    z-index:999;
+}
+
+
+.card img{
+    width:40%;
+    display:block;
+    margin:auto;
+    margin-top:20px;
+}
+
+.sale{
+    width:fit-content;
+    background-color: tomato;
+    color:#fff;
+    padding:7px 10px;
+    position:relative;
+    left: 150px;
+    top:4px;
+    font-size:12px;
+    border-radius:10px;
+}
+
+.heart{
+    position:relative;
+    top:5px;
+    font-size:15px;
+    color:grey;
+}
+
+.fav{
+    position:relative;
+    top:4px;
+    margin-right:7px;
+    width:12px;
+    color:grey;
+
+}
+
+.card-body{
+    font-family:mukta;
+    text-align: center;
+    padding:0px 10px;
+}
+.card-bottom a{
+    font-family:mukta;
+}
+.card-body h3,p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.card-body h3{
+    margin-top:20px;
+    line-height: 1;
+    font-size:16px;
+}
+
+.card-body p{
+    color:grey;
+    font-weight:lighter;
+}
+
+
+.buyNow{
+    background-color:rgb(60, 226, 60);
+    color:#fff;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size:13px;
+    position:relative;
+    top:-2px;
+}
+
+
+
+.addCart{
+    position:relative;
+    left:93px;
+    font-size:13px;
+    color:grey;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+
+.cartIcon{
+    position:relative;
+    top:3px;
+    color:grey;
+}
+
+
+.card-bottom{
+    margin-top:30px;
+}
